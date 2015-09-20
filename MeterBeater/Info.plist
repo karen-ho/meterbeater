@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>default</key>
+    <dict>
+        <key>BaseURL</key>
+        <string>mmx://10.1.10.156:5222</string>
+        <key>DomainName</key>
+        <string>mmx</string>
+        <key>AppId</key>
+        <string>67dies4kxkl</string>
+        <key>ApiKey</key>
+        <string>524ec1f8-8641-4acb-b92d-0c2d97fc7a17</string>
+        <key>AnonymousSecret</key>
+        <string>da4daafb-9aba-47aa-b441-bb832f13deef</string>
+        <key>ShouldForceTLS</key>
+        <true/>
+        <key>PublicAPIPort</key>
+        <integer>5221</integer>
+        <key>AllowInvalidCertificates</key>
+        <true/>
+    </dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

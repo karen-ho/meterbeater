@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MeterBeater WatchKit 1 App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MeterBeater.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Notification - MeterBeater WatchKit 1 App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>114C14811BAE56490057529D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>114C14A41BAE56520057529D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

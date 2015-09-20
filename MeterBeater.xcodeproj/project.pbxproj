@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114C14641BAE56490057529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14631BAE56490057529D /* AppDelegate.swift */; };
+		114C14661BAE56490057529D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14651BAE56490057529D /* ViewController.swift */; };
+		114C14691BAE56490057529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C14671BAE56490057529D /* Main.storyboard */; };
+		114C146C1BAE56490057529D /* MeterBeater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */; };
+		114C146E1BAE56490057529D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114C146D1BAE56490057529D /* Assets.xcassets */; };
+		114C14711BAE56490057529D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C146F1BAE56490057529D /* LaunchScreen.storyboard */; };
+		114C147C1BAE56490057529D /* MeterBeaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C147B1BAE56490057529D /* MeterBeaterTests.swift */; };
+		114C14871BAE56490057529D /* MeterBeaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14861BAE56490057529D /* MeterBeaterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		114C14781BAE56490057529D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114C14581BAE56490057529D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114C145F1BAE56490057529D;
+			remoteInfo = MeterBeater;
+		};
+		114C14831BAE56490057529D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114C14581BAE56490057529D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114C145F1BAE56490057529D;
+			remoteInfo = MeterBeater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114C14601BAE56490057529D /* MeterBeater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterBeater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		114C14631BAE56490057529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		114C14651BAE56490057529D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		114C14681BAE56490057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		114C146B1BAE56490057529D /* MeterBeater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeterBeater.xcdatamodel; sourceTree = "<group>"; };
+		114C146D1BAE56490057529D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		114C14701BAE56490057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		114C14721BAE56490057529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114C14771BAE56490057529D /* MeterBeaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterBeaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114C147B1BAE56490057529D /* MeterBeaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterBeaterTests.swift; sourceTree = "<group>"; };
+		114C147D1BAE56490057529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114C14821BAE56490057529D /* MeterBeaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterBeaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114C14861BAE56490057529D /* MeterBeaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterBeaterUITests.swift; sourceTree = "<group>"; };
+		114C14881BAE56490057529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		114C145D1BAE56490057529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C14741BAE56490057529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C147F1BAE56490057529D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114C14571BAE56490057529D = {
+			isa = PBXGroup;
+			children = (
+				114C14621BAE56490057529D /* MeterBeater */,
+				114C147A1BAE56490057529D /* MeterBeaterTests */,
+				114C14851BAE56490057529D /* MeterBeaterUITests */,
+				114C14611BAE56490057529D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		114C14611BAE56490057529D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				114C14601BAE56490057529D /* MeterBeater.app */,
+				114C14771BAE56490057529D /* MeterBeaterTests.xctest */,
+				114C14821BAE56490057529D /* MeterBeaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		114C14621BAE56490057529D /* MeterBeater */ = {
+			isa = PBXGroup;
+			children = (
+				114C14631BAE56490057529D /* AppDelegate.swift */,
+				114C14651BAE56490057529D /* ViewController.swift */,
+				114C14671BAE56490057529D /* Main.storyboard */,
+				114C146D1BAE56490057529D /* Assets.xcassets */,
+				114C146F1BAE56490057529D /* LaunchScreen.storyboard */,
+				114C14721BAE56490057529D /* Info.plist */,
+				114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */,
+			);
+			path = MeterBeater;
+			sourceTree = "<group>";
+		};
+		114C147A1BAE56490057529D /* MeterBeaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				114C147B1BAE56490057529D /* MeterBeaterTests.swift */,
+				114C147D1BAE56490057529D /* Info.plist */,
+			);
+			path = MeterBeaterTests;
+			sourceTree = "<group>";
+		};
+		114C14851BAE56490057529D /* MeterBeaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				114C14861BAE56490057529D /* MeterBeaterUITests.swift */,
+				114C14881BAE56490057529D /* Info.plist */,
+			);
+			path = MeterBeaterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		114C145F1BAE56490057529D /* MeterBeater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114C148B1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeater" */;
+			buildPhases = (
+				114C145C1BAE56490057529D /* Sources */,
+				114C145D1BAE56490057529D /* Frameworks */,
+				114C145E1BAE56490057529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeterBeater;
+			productName = MeterBeater;
+			productReference = 114C14601BAE56490057529D /* MeterBeater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		114C14761BAE56490057529D /* MeterBeaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114C148E1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterTests" */;
+			buildPhases = (
+				114C14731BAE56490057529D /* Sources */,
+				114C14741BAE56490057529D /* Frameworks */,
+				114C14751BAE56490057529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114C14791BAE56490057529D /* PBXTargetDependency */,
+			);
+			name = MeterBeaterTests;
+			productName = MeterBeaterTests;
+			productReference = 114C14771BAE56490057529D /* MeterBeaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		114C14811BAE56490057529D /* MeterBeaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114C14911BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterUITests" */;
+			buildPhases = (
+				114C147E1BAE56490057529D /* Sources */,
+				114C147F1BAE56490057529D /* Frameworks */,
+				114C14801BAE56490057529D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114C14841BAE56490057529D /* PBXTargetDependency */,
+			);
+			name = MeterBeaterUITests;
+			productName = MeterBeaterUITests;
+			productReference = 114C14821BAE56490057529D /* MeterBeaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		114C14581BAE56490057529D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Karen Ho";
+				TargetAttributes = {
+					114C145F1BAE56490057529D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					114C14761BAE56490057529D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 114C145F1BAE56490057529D;
+					};
+					114C14811BAE56490057529D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 114C145F1BAE56490057529D;
+					};
+				};
+			};
+			buildConfigurationList = 114C145B1BAE56490057529D /* Build configuration list for PBXProject "MeterBeater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 114C14571BAE56490057529D;
+			productRefGroup = 114C14611BAE56490057529D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				114C145F1BAE56490057529D /* MeterBeater */,
+				114C14761BAE56490057529D /* MeterBeaterTests */,
+				114C14811BAE56490057529D /* MeterBeaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		114C145E1BAE56490057529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114C14711BAE56490057529D /* LaunchScreen.storyboard in Resources */,
+				114C146E1BAE56490057529D /* Assets.xcassets in Resources */,
+				114C14691BAE56490057529D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C14751BAE56490057529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C14801BAE56490057529D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		114C145C1BAE56490057529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114C146C1BAE56490057529D /* MeterBeater.xcdatamodeld in Sources */,
+				114C14661BAE56490057529D /* ViewController.swift in Sources */,
+				114C14641BAE56490057529D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C14731BAE56490057529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114C147C1BAE56490057529D /* MeterBeaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114C147E1BAE56490057529D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114C14871BAE56490057529D /* MeterBeaterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		114C14791BAE56490057529D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114C145F1BAE56490057529D /* MeterBeater */;
+			targetProxy = 114C14781BAE56490057529D /* PBXContainerItemProxy */;
+		};
+		114C14841BAE56490057529D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114C145F1BAE56490057529D /* MeterBeater */;
+			targetProxy = 114C14831BAE56490057529D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		114C14671BAE56490057529D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114C14681BAE56490057529D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		114C146F1BAE56490057529D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114C14701BAE56490057529D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		114C14891BAE56490057529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		114C148A1BAE56490057529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		114C148C1BAE56490057529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeterBeater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		114C148D1BAE56490057529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeterBeater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		114C148F1BAE56490057529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeterBeaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeterBeater.app/MeterBeater";
+			};
+			name = Debug;
+		};
+		114C14901BAE56490057529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeterBeaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeterBeater.app/MeterBeater";
+			};
+			name = Release;
+		};
+		114C14921BAE56490057529D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeterBeaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeterBeater;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		114C14931BAE56490057529D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeterBeaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeterBeater;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		114C145B1BAE56490057529D /* Build configuration list for PBXProject "MeterBeater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114C14891BAE56490057529D /* Debug */,
+				114C148A1BAE56490057529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114C148B1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114C148C1BAE56490057529D /* Debug */,
+				114C148D1BAE56490057529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		114C148E1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114C148F1BAE56490057529D /* Debug */,
+				114C14901BAE56490057529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		114C14911BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114C14921BAE56490057529D /* Debug */,
+				114C14931BAE56490057529D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				114C146B1BAE56490057529D /* MeterBeater.xcdatamodel */,
+			);
+			currentVersion = 114C146B1BAE56490057529D /* MeterBeater.xcdatamodel */;
+			path = MeterBeater.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 114C14581BAE56490057529D /* Project object */;
+}

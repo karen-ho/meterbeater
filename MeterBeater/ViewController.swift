@@ -9,8 +9,15 @@
 import UIKit
 import WatchConnectivity
 import CoreLocation
+import MapKit
 
-class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDelegate {
+class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDelegate, MKMapViewDelegate {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    let regionRadius: CLLocationDistance = 1000
+    
+    let locationManager = CLLocationManager()
     
     /// Default WatchConnectivity session for communicating with the watch.
     let session = WCSession.defaultSession()
@@ -21,18 +28,15 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
     /// Indicates whether the location manager is updating location.
     var isUpdatingLocation = false
     
-    /// Cumulative count of received locations.
-    var receivedLocationCount = 0
-    
-    /// The number of locations that will be sent in a batch to the watch.
-    var locationBatchCount = 0
-    
     /**
     Timer to send the cumulative count to the watch.
     To avoid polluting IDS traffic, its better to send batch updates to the watch
     instead of sending the updates as they arrive.
     */
     var sessionMessageTimer = NSTimer()
+    
+    var location: CLLocationCoordinate2D = CLLocationCoordinate2D()
+    var region: MKCoordinateRegion = MKCoordinateRegion()
     
     
     // MARK: Initialization
@@ -71,6 +75,15 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.startUpdatingLocation()
+        
+        mapView.mapType = MKMapType.Standard
+        mapView.showsUserLocation = true
+        mapView.removeAnnotations(mapView.annotations)
     }
     
     /**
@@ -99,7 +112,6 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
             do {
                 try session.updateApplicationContext([
                     MessageKey.StateUpdate.rawValue: isUpdatingLocation,
-                    MessageKey.LocationCount.rawValue: String(receivedLocationCount)
                     ])
             }
             catch let error as NSError {
@@ -132,7 +144,6 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
             do {
                 try session.updateApplicationContext([
                     MessageKey.StateUpdate.rawValue: isUpdatingLocation,
-                    MessageKey.LocationCount.rawValue: String(receivedLocationCount)
                     ])
             }
             catch let error as NSError {
@@ -204,11 +215,7 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
         do {
             try session.updateApplicationContext([
                 MessageKey.StateUpdate.rawValue: isUpdatingLocation,
-                MessageKey.LocationCount.rawValue: String(receivedLocationCount)
                 ])
-            
-            locationBatchCount = 0
-            
         }
         catch let error as NSError {
             print("Error when updating application context \(error).")
@@ -221,13 +228,41 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
     manager. Updates the batch count with the added locations.
     */
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        receivedLocationCount = receivedLocationCount + locations.count
-        locationBatchCount = locationBatchCount + locations.count
+        let location = locations.last
+        
+        self.location = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        let region = MKCoordinateRegion(center: self.location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        
+        self.mapView.setRegion(region, animated: true)
+        centerMapOnLocation(location!)
+        
+        // Add an annotation on Map View
+        let point: MKPointAnnotation! = MKPointAnnotation()
+        point.coordinate = location!.coordinate
+        self.mapView.addAnnotation(point)
+        
+        //stop updating location to save battery life
+        locationManager.stopUpdatingLocation()
     }
     
     /// Log any errors to the console.
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("Error occured: \(error.localizedDescription).")
+    }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        self.region = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "createARequest" {
+            let createRequestViewController: CreateRequestViewController = segue.destinationViewController as! CreateRequestViewController
+            createRequestViewController.location = self.location
+            createRequestViewController.region = self.region
+        }
     }
     
     

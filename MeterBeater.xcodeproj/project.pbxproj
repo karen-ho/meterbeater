@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1133823F1BAE785700C794EA /* CreateRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133823E1BAE785700C794EA /* CreateRequestViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		113382411BAE7BFB00C794EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113382401BAE7BFB00C794EA /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		114C14641BAE56490057529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14631BAE56490057529D /* AppDelegate.swift */; };
 		114C14661BAE56490057529D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14651BAE56490057529D /* ViewController.swift */; };
 		114C14691BAE56490057529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C14671BAE56490057529D /* Main.storyboard */; };
 		114C146C1BAE56490057529D /* MeterBeater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */; };
-		114C146E1BAE56490057529D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114C146D1BAE56490057529D /* Assets.xcassets */; };
 		114C14711BAE56490057529D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C146F1BAE56490057529D /* LaunchScreen.storyboard */; };
 		114C147C1BAE56490057529D /* MeterBeaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C147B1BAE56490057529D /* MeterBeaterTests.swift */; };
 		114C14871BAE56490057529D /* MeterBeaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14861BAE56490057529D /* MeterBeaterUITests.swift */; };
@@ -76,12 +77,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1133823E1BAE785700C794EA /* CreateRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRequestViewController.swift; sourceTree = "<group>"; };
+		113382401BAE7BFB00C794EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114C14601BAE56490057529D /* MeterBeater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterBeater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114C14631BAE56490057529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114C14651BAE56490057529D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		114C14681BAE56490057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		114C146B1BAE56490057529D /* MeterBeater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeterBeater.xcdatamodel; sourceTree = "<group>"; };
-		114C146D1BAE56490057529D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114C14701BAE56490057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114C14721BAE56490057529D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114C14771BAE56490057529D /* MeterBeaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterBeaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,10 +170,11 @@
 		114C14621BAE56490057529D /* MeterBeater */ = {
 			isa = PBXGroup;
 			children = (
+				113382401BAE7BFB00C794EA /* Assets.xcassets */,
 				114C14631BAE56490057529D /* AppDelegate.swift */,
 				114C14651BAE56490057529D /* ViewController.swift */,
 				114C14671BAE56490057529D /* Main.storyboard */,
-				114C146D1BAE56490057529D /* Assets.xcassets */,
+				1133823E1BAE785700C794EA /* CreateRequestViewController.swift */,
 				114C146F1BAE56490057529D /* LaunchScreen.storyboard */,
 				114C14721BAE56490057529D /* Info.plist */,
 				114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */,
@@ -387,7 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114C14711BAE56490057529D /* LaunchScreen.storyboard in Resources */,
-				114C146E1BAE56490057529D /* Assets.xcassets in Resources */,
+				113382411BAE7BFB00C794EA /* Assets.xcassets in Resources */,
 				114C14691BAE56490057529D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +437,7 @@
 				114C146C1BAE56490057529D /* MeterBeater.xcdatamodeld in Sources */,
 				114C14661BAE56490057529D /* ViewController.swift in Sources */,
 				114C14BC1BAE56780057529D /* PotlocConstants.swift in Sources */,
+				1133823F1BAE785700C794EA /* CreateRequestViewController.swift in Sources */,
 				114C14641BAE56490057529D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +750,7 @@
 				114C148D1BAE56490057529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114C148E1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterTests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +759,7 @@
 				114C14901BAE56490057529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114C14911BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeaterUITests" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +768,7 @@
 				114C14931BAE56490057529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114C14B31BAE56520057529D /* Build configuration list for PBXNativeTarget "MeterBeater WatchKit 1 App" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +777,7 @@
 				114C14B51BAE56520057529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114C14B61BAE56520057529D /* Build configuration list for PBXNativeTarget "MeterBeater WatchKit 1 Extension" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +786,7 @@
 				114C14B81BAE56520057529D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -29,9 +29,9 @@
 		114C14C21BAE570E0057529D /* CurrentMeterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14C11BAE570E0057529D /* CurrentMeterController.swift */; settings = {ASSET_TAGS = (); }; };
 		114C14C41BAE57130057529D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14C31BAE57130057529D /* ExtensionDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		114C14C61BAE57270057529D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14C51BAE57270057529D /* GlanceController.swift */; settings = {ASSET_TAGS = (); }; };
-		114C14C91BAE57460057529D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C14C81BAE57460057529D /* Interface.storyboard */; settings = {ASSET_TAGS = (); }; };
 		11690E511BAEA4DA0021863A /* DurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11690E501BAEA4DA0021863A /* DurationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		11690E531BAEC4CC0021863A /* MeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11690E521BAEC4CC0021863A /* MeterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		37EE87031BAEF428006183DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE87021BAEF428006183DC /* Interface.storyboard */; settings = {ASSET_TAGS = (); }; };
 		D18EBC7B75474C74A13B5298 /* Pods_MeterBeater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A8CF65B26935F3149087AB /* Pods_MeterBeater.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -113,9 +113,9 @@
 		114C14C11BAE570E0057529D /* CurrentMeterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentMeterController.swift; sourceTree = "<group>"; };
 		114C14C31BAE57130057529D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		114C14C51BAE57270057529D /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		114C14C71BAE57460057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		11690E501BAEA4DA0021863A /* DurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationViewController.swift; sourceTree = "<group>"; };
 		11690E521BAEC4CC0021863A /* MeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterViewController.swift; sourceTree = "<group>"; };
+		37EE87021BAEF428006183DC /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		55A8CF65B26935F3149087AB /* Pods_MeterBeater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeterBeater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4B5F50BA511B796E0A5BB8 /* Pods-MeterBeater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeterBeater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater.debug.xcconfig"; sourceTree = "<group>"; };
 		E940765B7352CCB823C0EDC2 /* Pods-MeterBeater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeterBeater.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 		114C14A91BAE56520057529D /* MeterBeater WatchKit 1 App */ = {
 			isa = PBXGroup;
 			children = (
-				114C14C81BAE57460057529D /* Interface.storyboard */,
+				37EE87021BAEF428006183DC /* Interface.storyboard */,
 				114C14AD1BAE56520057529D /* Assets.xcassets */,
 				114C14AF1BAE56520057529D /* Info.plist */,
 			);
@@ -384,6 +384,7 @@
 				TargetAttributes = {
 					114C145F1BAE56490057529D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2J288MX8BX;
 					};
 					114C14761BAE56490057529D = {
 						CreatedOnToolsVersion = 7.0;
@@ -395,9 +396,11 @@
 					};
 					114C14971BAE56520057529D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2J288MX8BX;
 					};
 					114C14A41BAE56520057529D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2J288MX8BX;
 					};
 				};
 			};
@@ -462,7 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114C14C91BAE57460057529D /* Interface.storyboard in Resources */,
+				37EE87031BAEF428006183DC /* Interface.storyboard in Resources */,
 				114C14AE1BAE56520057529D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,15 +607,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		114C14C81BAE57460057529D /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				114C14C71BAE57460057529D /* Base */,
-			);
-			name = Interface.storyboard;
-			path = "../../../MeterBeater/MeterBeater WatchKit App";
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -703,6 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -720,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -782,6 +778,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = MeterBeater_WatchKit_1_Extension;
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -797,6 +794,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = MeterBeater_WatchKit_1_Extension;
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -811,6 +809,7 @@
 		114C14B71BAE56520057529D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitextension;
@@ -822,6 +821,7 @@
 		114C14B81BAE56520057529D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitextension;

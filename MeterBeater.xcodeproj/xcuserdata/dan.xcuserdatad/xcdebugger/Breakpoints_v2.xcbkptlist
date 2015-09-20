@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeterBeater WatchKit 1 Extension/StartMeterController.swift"
+            timestampString = "464449686.238846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "StartMeterController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeterBeater WatchKit 1 Extension/StartMeterController.swift"
+            timestampString = "464447046.851902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "startMeter()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeterBeater WatchKit 1 Extension/StartMeterController.swift"
+            timestampString = "464447046.851902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "StartMeterController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeterBeater_WatchKit_1_Extension.StartMeterController.requestURL.getter : Swift.String"
+                  moduleName = "MeterBeater WatchKit 1 Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dan/Documents/meter-beater-watch/meterbeater/MeterBeater%20WatchKit%201%20Extension/StartMeterController.swift"
+                  timestampString = "464447046.953814"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeterBeater_WatchKit_1_Extension.StartMeterController.init (MeterBeater_WatchKit_1_Extension.StartMeterController.Type)() -&gt; MeterBeater_WatchKit_1_Extension.StartMeterController"
+                  moduleName = "MeterBeater WatchKit 1 Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dan/Documents/meter-beater-watch/meterbeater/MeterBeater%20WatchKit%201%20Extension/StartMeterController.swift"
+                  timestampString = "464447046.954053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

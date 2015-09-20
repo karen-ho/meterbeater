@@ -78,12 +78,28 @@ class ViewController: UIViewController, WCSessionDelegate, CLLocationManagerDele
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
+        
+        //hard coding in case of internet issues
+        if (false) {
+            let location = CLLocation(latitude: 37.7586, longitude: -122.3844)
+            self.location = CLLocationCoordinate2D(latitude: 37.7586, longitude: -122.3844)
+            let region = MKCoordinateRegion(center: self.location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        
+            self.mapView.setRegion(region, animated: true)
+            centerMapOnLocation(location)
+        
+            // Add an annotation on Map View
+            let point: MKPointAnnotation! = MKPointAnnotation()
+            point.coordinate = location.coordinate
+            self.mapView.addAnnotation(point)
+        } else {
+            self.locationManager.requestAlwaysAuthorization()
+            self.locationManager.startUpdatingLocation()
+        }
         
         mapView.mapType = MKMapType.Standard
         mapView.showsUserLocation = true
-        mapView.removeAnnotations(mapView.annotations)
     }
     
     /**

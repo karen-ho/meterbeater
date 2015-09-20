@@ -19,6 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         MMX.setupWithConfiguration("default")
+        
+        let username = "jane.doe"
+        let password = "magnet"
+        
+        let credential = NSURLCredential(user: username, password: password, persistence: .None)
+        
+        MMXUser.logInWithCredential(credential,
+            success: { (user) -> Void in
+                
+            }, 
+            failure: { (error) -> Void in
+                
+        })
         return true
     }
 

@@ -20,7 +20,7 @@ class CreateRequestViewController: UIViewController {
     
     var durationInMinutes: Float = 30
     
-    let requestURL = "http://meterbeater.herokuapp.com/request"
+    let requestURL = "http://172.20.10.3:8080/request"
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var durationLabel: UILabel!

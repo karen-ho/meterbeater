@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Directions Widget</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <style>
+        html, body, #map {
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+        body {
+            background-color:#FFF;
+            overflow:hidden;
+            font-family:"Trebuchet MS";
+        }
+        #confirm {
+            width: 200px;
+        }
+        #action-set, #default-data {
+            text-align: center;
+        }
+    </style>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="manage.js"></script>
+    <script src="http://js.arcgis.com/3.14/"></script>
+    <script src="more.js"></script>
+</head>
+<body class="claro">
+<div data-dojo-type="dijit/layout/BorderContainer"
+     data-dojo-props="design:'headline', gutters:false"
+     style="width:100%;height:100%;">
+    <div data-dojo-type="dijit/layout/ContentPane"
+         data-dojo-props="region:'top'"
+         style="height:38px;">
+        <div class="container-fluid">
+            <div class="col-xs-8">
+                The weather is <span id="weather"></span>. <span id="pay"></span>
+            </div>
+            <div class="col-xs-4">
+                Balance: $<span id="balance"></span>
+            </div>
+        </div>
+    </div>
+    <div data-dojo-type="dijit/layout/ContentPane"
+         data-dojo-props="region:'bottom'"
+         style="height:250px;">
+        <div class="container-fluid" id="default-data">
+            Waiting for additional requests...
+        </div>
+        <div class="container-fluid" id="order-details">
+            <div id="car-data" class="col-xs-4">
+                <div>
+                    <span class="field">Car:</span>
+                    <img class="value" id="car" />
+                </div>
+                <div>
+                    <span class="field">License Plate:</span>
+                    <span class="value" id="license-plate"></span>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <span id="time-left"></span> minutes
+            </div>
+        </div>
+        <div id="action-set">
+            <button class="btn btn-danger" id="cancel">Gone</button>
+            <button class="btn btn-primary" id="confirm">Paid</button>
+        </div>
+    </div>
+    <div data-dojo-type="dijit/layout/ContentPane"
+         data-dojo-props="region:'right'"
+         style="width:250px;">
+        <div id="dir"></div>
+    </div>
+    <div id="map"
+         data-dojo-type="dijit/layout/ContentPane"
+         data-dojo-props="region:'center'">
+    </div>
+</div>
+</body>
+</html>

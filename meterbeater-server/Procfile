@@ -1,0 +1,1 @@
+web: java -jar target/meterbeater-server-0.1.0.jar --server.port=$PORT

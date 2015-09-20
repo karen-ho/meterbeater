@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CVm-6m-sfk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Main" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MeterBeater_WatchKit_1_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="347"/>
+        </scene>
+        <!--StartMeter-->
+        <scene sceneID="WXf-yB-ziq">
+            <objects>
+                <controller identifier="StartMeter" hidesWhenLoading="NO" id="CVm-6m-sfk" customClass="StartMeterController" customModule="MeterBeater_WatchKit_1_Extension">
+                    <items>
+                        <group width="1" height="100" alignment="center" layout="vertical" id="aGB-tN-J0Q">
+                            <items>
+                                <timer width="1" alignment="center" verticalAlignment="center" textAlignment="center" format="short" previewedSeconds="30000" id="Ts3-yA-kBi">
+                                    <accessibilityTraits key="accessibilityTraits" updatesFrequently="YES"/>
+                                    <calendarUnit key="units" hour="YES" minute="YES"/>
+                                </timer>
+                                <slider width="100" height="20" alignment="center" verticalAlignment="center" continuous="YES" value="31" maximum="200" steps="200" id="YQ8-BK-nMD">
+                                    <connections>
+                                        <action selector="sliderAction:" destination="CVm-6m-sfk" id="Ina-Fr-8JC"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="5LH-Lm-rF5">
+                            <items>
+                                <button width="1" alignment="left" title="Start Meter" id="xK9-Zb-zs1">
+                                    <color key="backgroundColor" red="0.33333333333333331" green="0.58823529411764708" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="startMeter" destination="CVm-6m-sfk" id="Ffz-IH-x2w"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="meterSlider" destination="YQ8-BK-nMD" id="Ync-KV-bIo"/>
+                        <outlet property="meterTimer" destination="Ts3-yA-kBi" id="l8F-tq-8YQ"/>
+                        <outlet property="startButton" destination="xK9-Zb-zs1" id="8jF-pj-BIg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="407" y="347"/>
+        </scene>
+        <!--CurrentMeter-->
+        <scene sceneID="2lo-AL-nDP">
+            <objects>
+                <controller identifier="CurrentMeter" hidesWhenLoading="NO" id="hVZ-Kn-FH8" customClass="CurrentMeterController" customModule="MeterBeater_WatchKit_1_Extension">
+                    <items>
+                        <map width="1" height="100" alignment="left" id="WOE-vy-pJh"/>
+                        <label width="1" alignment="left" text="Time Left" textAlignment="center" id="640-Qy-Bhk">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </label>
+                        <group width="1" alignment="left" id="9cU-qg-Mcv">
+                            <items>
+                                <timer width="1" alignment="center" textAlignment="center" format="short" id="eNl-Nl-UEL">
+                                    <calendarUnit key="units" hour="YES" minute="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="WOE-vy-pJh" id="1Ri-lg-eNP"/>
+                        <outlet property="meterTimer" destination="eNl-Nl-UEL" id="NU7-h2-TPd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="585" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="MeterBeater_WatchKit_1_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="MeterBeater_WatchKit_1_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

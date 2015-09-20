@@ -192,14 +192,15 @@ public class MeterBeaterService {
 
 			HttpClient httpclient = HttpClients.createDefault();
 
-			HttpPost httppost = new HttpPost("https://localhost:3000/mmxmgmt/api/v1/send_message");
+			HttpPost httppost = new HttpPost("http://localhost:5220/mmxmgmt/api/v1/send_message");
 			httppost.setHeader("X-mmx-app-id", "mrpiesggwys");
 			httppost.setHeader("X-mmx-api-key", "bc1e6b4e-ed2a-498b-b85a-6da80295c037");
 			httppost.setHeader("Content-Type", "application/json");
 			httppost.setEntity(
 					new StringEntity("{" +
 							"\"recipientUsernames\":[\"" + customer.getMagnetUsername() + "\"]," +
-							"\"content\":\"Your meter has been reloaded for another hour!\"" +
+							"\"content\": {\"message\": \"Your meter has been reloaded for another hour!\", \"date\":\"09202015\"}, " +
+							"\"receipt\": \"false\"" +
 							"}",
 					ContentType.create("application/json")));
 
@@ -216,7 +217,7 @@ public class MeterBeaterService {
 				}
 			}
 		} catch(Exception e) {
-			//Do nothing
+			System.out.println(e);
 		}
 	}
 

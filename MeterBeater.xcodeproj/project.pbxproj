@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1133823F1BAE785700C794EA /* CreateRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133823E1BAE785700C794EA /* CreateRequestViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		113382411BAE7BFB00C794EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113382401BAE7BFB00C794EA /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		113382471BAE91DC00C794EA /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 113382461BAE91DC00C794EA /* Configurations.plist */; settings = {ASSET_TAGS = (); }; };
 		114C14641BAE56490057529D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14631BAE56490057529D /* AppDelegate.swift */; };
 		114C14661BAE56490057529D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14651BAE56490057529D /* ViewController.swift */; };
 		114C14691BAE56490057529D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C14671BAE56490057529D /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 		114C14C41BAE57130057529D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14C31BAE57130057529D /* ExtensionDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		114C14C61BAE57270057529D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114C14C51BAE57270057529D /* GlanceController.swift */; settings = {ASSET_TAGS = (); }; };
 		114C14C91BAE57460057529D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114C14C81BAE57460057529D /* Interface.storyboard */; settings = {ASSET_TAGS = (); }; };
+		11690E511BAEA4DA0021863A /* DurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11690E501BAEA4DA0021863A /* DurationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		11690E531BAEC4CC0021863A /* MeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11690E521BAEC4CC0021863A /* MeterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D18EBC7B75474C74A13B5298 /* Pods_MeterBeater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A8CF65B26935F3149087AB /* Pods_MeterBeater.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,8 @@
 /* Begin PBXFileReference section */
 		1133823E1BAE785700C794EA /* CreateRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRequestViewController.swift; sourceTree = "<group>"; };
 		113382401BAE7BFB00C794EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		113382431BAE90FA00C794EA /* MeterBeater-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeterBeater-Bridging-Header.h"; sourceTree = "<group>"; };
+		113382461BAE91DC00C794EA /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		114C14601BAE56490057529D /* MeterBeater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeterBeater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114C14631BAE56490057529D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114C14651BAE56490057529D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,11 @@
 		114C14C31BAE57130057529D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		114C14C51BAE57270057529D /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		114C14C71BAE57460057529D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		11690E501BAEA4DA0021863A /* DurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationViewController.swift; sourceTree = "<group>"; };
+		11690E521BAEC4CC0021863A /* MeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterViewController.swift; sourceTree = "<group>"; };
+		55A8CF65B26935F3149087AB /* Pods_MeterBeater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeterBeater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4B5F50BA511B796E0A5BB8 /* Pods-MeterBeater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeterBeater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater.debug.xcconfig"; sourceTree = "<group>"; };
+		E940765B7352CCB823C0EDC2 /* Pods-MeterBeater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeterBeater.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18EBC7B75474C74A13B5298 /* Pods_MeterBeater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +164,8 @@
 				114C14991BAE56520057529D /* MeterBeater WatchKit 1 Extension */,
 				114C14A91BAE56520057529D /* MeterBeater WatchKit 1 App */,
 				114C14611BAE56490057529D /* Products */,
+				5EAAB738A4A58E833172F8E4 /* Pods */,
+				1A15DB22D1999AA22A1588DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,12 +186,16 @@
 			children = (
 				113382401BAE7BFB00C794EA /* Assets.xcassets */,
 				114C14631BAE56490057529D /* AppDelegate.swift */,
+				113382461BAE91DC00C794EA /* Configurations.plist */,
 				114C14651BAE56490057529D /* ViewController.swift */,
 				114C14671BAE56490057529D /* Main.storyboard */,
+				11690E521BAEC4CC0021863A /* MeterViewController.swift */,
+				11690E501BAEA4DA0021863A /* DurationViewController.swift */,
 				1133823E1BAE785700C794EA /* CreateRequestViewController.swift */,
 				114C146F1BAE56490057529D /* LaunchScreen.storyboard */,
 				114C14721BAE56490057529D /* Info.plist */,
 				114C146A1BAE56490057529D /* MeterBeater.xcdatamodeld */,
+				113382431BAE90FA00C794EA /* MeterBeater-Bridging-Header.h */,
 			);
 			path = MeterBeater;
 			sourceTree = "<group>";
@@ -243,6 +261,23 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		1A15DB22D1999AA22A1588DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A8CF65B26935F3149087AB /* Pods_MeterBeater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EAAB738A4A58E833172F8E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB4B5F50BA511B796E0A5BB8 /* Pods-MeterBeater.debug.xcconfig */,
+				E940765B7352CCB823C0EDC2 /* Pods-MeterBeater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,10 +285,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 114C148B1BAE56490057529D /* Build configuration list for PBXNativeTarget "MeterBeater" */;
 			buildPhases = (
+				377845B71E5EF6DDF0D06AC7 /* Check Pods Manifest.lock */,
 				114C145C1BAE56490057529D /* Sources */,
 				114C145D1BAE56490057529D /* Frameworks */,
 				114C145E1BAE56490057529D /* Resources */,
 				114C14B91BAE56520057529D /* Embed App Extensions */,
+				90B88A604530A7079224B49C /* Copy Pods Resources */,
+				E11D81AE65DC58F045F6BFB6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +378,7 @@
 		114C14581BAE56490057529D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Karen Ho";
 				TargetAttributes = {
@@ -390,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114C14711BAE56490057529D /* LaunchScreen.storyboard in Resources */,
+				113382471BAE91DC00C794EA /* Configurations.plist in Resources */,
 				113382411BAE7BFB00C794EA /* Assets.xcassets in Resources */,
 				114C14691BAE56490057529D /* Main.storyboard in Resources */,
 			);
@@ -429,6 +469,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		377845B71E5EF6DDF0D06AC7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90B88A604530A7079224B49C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E11D81AE65DC58F045F6BFB6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeterBeater/Pods-MeterBeater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		114C145C1BAE56490057529D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -437,6 +525,8 @@
 				114C146C1BAE56490057529D /* MeterBeater.xcdatamodeld in Sources */,
 				114C14661BAE56490057529D /* ViewController.swift in Sources */,
 				114C14BC1BAE56780057529D /* PotlocConstants.swift in Sources */,
+				11690E531BAEC4CC0021863A /* MeterViewController.swift in Sources */,
+				11690E511BAEA4DA0021863A /* DurationViewController.swift in Sources */,
 				1133823F1BAE785700C794EA /* CreateRequestViewController.swift in Sources */,
 				114C14641BAE56490057529D /* AppDelegate.swift in Sources */,
 			);
@@ -609,25 +699,32 @@
 		};
 		114C148C1BAE56490057529D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4B5F50BA511B796E0A5BB8 /* Pods-MeterBeater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MeterBeater/MeterBeater-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		114C148D1BAE56490057529D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E940765B7352CCB823C0EDC2 /* Pods-MeterBeater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MeterBeater/MeterBeater-Bridging-Header.h";
 			};
 			name = Release;
 		};

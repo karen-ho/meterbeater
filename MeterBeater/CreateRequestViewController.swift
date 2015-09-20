@@ -18,6 +18,8 @@ class CreateRequestViewController: UIViewController {
     
     var durationInMinutes: Float = 30
     
+    let requestURL = "http://meterbeater.herokuapp.com/request"
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var durationLabel: UILabel!
     
@@ -36,7 +38,7 @@ class CreateRequestViewController: UIViewController {
             point.coordinate = currentLocation
             self.mapView.addAnnotation(point)
         }
-        
+                
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,15 +52,20 @@ class CreateRequestViewController: UIViewController {
         
         if hour > 0 {
             if hour > 1 {
-                durationValue = String(format: "%.f hours", hour)
+                durationValue = String(format: "%.0f hours, ", hour)
             } else {
-                durationValue = String(format: "%.f hour", hour)
+                durationValue = String(format: "%.0f hour, ", hour)
             }
         }
         
         let minutes: Float = self.durationInMinutes % 60.0
         
-        self.durationLabel.text = String(format: "%s, %.f minutes", durationValue, minutes)
+        let minutesValue = minutes > 1
+            ? String(format: "%.0f minutes", minutes)
+            : String(format: "%.0f minute", minutes)
+        
+        
+        self.durationLabel.text = "\(durationValue)\(minutesValue)"
     }
     
     func centerMapOnLocation(location: CLLocationCoordinate2D) {
@@ -67,6 +74,62 @@ class CreateRequestViewController: UIViewController {
     }
     
     @IBAction func showDurationPicker(sender: AnyObject) {
-        NSLog("HII")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let durationViewController: DurationViewController = storyBoard.instantiateViewControllerWithIdentifier("durationViewController") as! DurationViewController
+        
+        durationViewController.view.backgroundColor = UIColor.clearColor()
+        self.performSegueWithIdentifier("durationSegue", sender: self)
+    }
+    
+    @IBAction func completeRequest(sender: AnyObject) {
+        let query = self.requestURL
+        let url: NSURL = NSURL(string: query)!
+        
+        let lat: Double = Double((self.location?.latitude)!)
+        let long: Double = Double((self.location?.longitude)!)
+        
+        let request = NSMutableURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 60.0)
+        request.HTTPMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        let params = ["customerId":"1", "lat":lat, "lon":long, "minutes": self.durationInMinutes]
+        
+        do {
+            request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(params, options: [])
+        } catch {
+            print(error)
+            request.HTTPBody = nil
+        }
+        
+        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: config)
+        
+        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+            if((error) != nil) {
+                NSLog(error!.localizedDescription)
+            } else {
+                if data != nil {
+                    if let csv = NSString(data: data!, encoding: NSUTF8StringEncoding ) {
+                        NSLog("\(csv)")
+                    }
+                }
+            }
+        })
+        task.resume()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "durationSegue" {
+            let durationViewController = segue.destinationViewController as! DurationViewController
+            durationViewController.createRequestViewController = self
+            durationViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        }
+        
+        if segue.identifier == "meterRequest" {
+            let meterViewController: MeterViewController = segue.destinationViewController as! MeterViewController
+            meterViewController.location = self.location
+            meterViewController.region = self.region
+            meterViewController.duration = self.durationInMinutes
+        }
     }
 }

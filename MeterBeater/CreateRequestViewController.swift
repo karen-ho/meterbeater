@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import MapKit
 
+let grayBorder: CGColor = UIColor(red: 201.0/255.0, green: 201.0/255.0, blue: 201.0/255.0, alpha: 1.0).CGColor
+
 class CreateRequestViewController: UIViewController {
     var location: CLLocationCoordinate2D?
     var region: MKCoordinateRegion?
@@ -22,6 +24,8 @@ class CreateRequestViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var durationView: UIView!
+    @IBOutlet weak var paymentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,9 @@ class CreateRequestViewController: UIViewController {
             point.coordinate = currentLocation
             self.mapView.addAnnotation(point)
         }
+        
+        self.durationView.layer.borderColor = grayBorder
+        self.paymentView.layer.borderColor = grayBorder
                 
     }
     

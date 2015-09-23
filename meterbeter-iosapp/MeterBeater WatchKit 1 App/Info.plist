@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>littlepinkrose12.MeterBeater</string>
+	<string>com.littlepinkrose12.MeterBeater</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

@@ -385,6 +385,11 @@
 					114C145F1BAE56490057529D = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 2J288MX8BX;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					114C14761BAE56490057529D = {
 						CreatedOnToolsVersion = 7.0;
@@ -702,7 +707,7 @@
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MeterBeater/MeterBeater-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -720,7 +725,7 @@
 				INFOPLIST_FILE = MeterBeater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MeterBeater/MeterBeater-Bridging-Header.h";
 			};
@@ -732,7 +737,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MeterBeaterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeaterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeterBeater.app/MeterBeater";
 			};
@@ -744,7 +749,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MeterBeaterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeaterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeterBeater.app/MeterBeater";
 			};
@@ -755,7 +760,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MeterBeaterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeaterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MeterBeater;
 				USES_XCTRUNNER = YES;
@@ -767,7 +772,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MeterBeaterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeaterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeaterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MeterBeater;
 				USES_XCTRUNNER = YES;
@@ -782,7 +787,7 @@
 				IBSC_MODULE = MeterBeater_WatchKit_1_Extension;
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -798,7 +803,7 @@
 				IBSC_MODULE = MeterBeater_WatchKit_1_Extension;
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -812,7 +817,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
@@ -824,7 +829,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "MeterBeater WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = littlepinkrose12.MeterBeater.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlepinkrose12.MeterBeater.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
